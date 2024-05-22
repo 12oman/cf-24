@@ -45,4 +45,8 @@ HELLO YOUR MAJES-KITTY I BOW DOWN TO THEE
 
 ^^ OMG SLAY SO COOL ^^
 
+quite purr-culiar
+utterly cat-astrophic
+just hear meow-t
+
 hello kitty cult yass
