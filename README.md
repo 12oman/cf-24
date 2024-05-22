@@ -44,3 +44,5 @@ bow down too hello kitty
 HELLO YOUR MAJES-KITTY I BOW DOWN TO THEE
 
 ^^ OMG SLAY SO COOL ^^
+
+hello kitty cult yass
