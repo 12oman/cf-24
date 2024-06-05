@@ -74,7 +74,23 @@ main {
     color: rgb(0, 0, 0);
     font-size: 40px;
     margin-top: -50px;
+    transition: transform 0.4s ease;
+    animation: bubble 5s ease-in-out infinite alternate; 
+    
 }
+
+@keyframes bubble {
+    20% {
+        transform: translateY(20);
+    }
+    2% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+    20% {
+        transform: translateY(20);
+    }
+}
+
 
 .gallery {
     display: flex;
@@ -87,11 +103,11 @@ main {
     position: relative;
     background-color: white;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(255, 255, 255, 0);
+    box-shadow: 0 0px 0px rgba(255, 255, 255, 0);
     overflow: hidden;
     width: 150px;
     height: 200px;
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
     text-align: center;
     animation: bubble 5s ease-in-out infinite alternate; 
 }
@@ -119,7 +135,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.671) 50%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.671) 70%);
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
@@ -182,3 +198,4 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
