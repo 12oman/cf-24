@@ -1,0 +1,184 @@
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.silkscreen-regular {
+    font-family: "Silkscreen", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background-color: #c1bfbf00;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+header .logo-img {
+    width: 60px;
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    font-size: 30px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 5rem;
+}
+
+header nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.362);
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.websites {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-top: -50px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.card {
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0);
+    overflow: hidden;
+    width: 150px;
+    height: 200px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    animation: bubble 5s ease-in-out infinite alternate; 
+}
+
+@keyframes bubble {
+    0% {
+        transform: translateY(50);
+    }
+    50% {
+        transform: translateY(-40px) rotate(5deg);
+    }
+    100% {
+        transform: translateY(30);
+    }
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.671) 50%);
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+.card p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+footer {
+    background-color: rgba(186, 223, 147, 0);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1rem;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #f6cdd3;
+    color: rgb(255, 255, 255);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
