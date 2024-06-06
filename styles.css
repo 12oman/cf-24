@@ -2,13 +2,14 @@ body {
     font-family: "Pixelify Sans", sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('');
+    background-image: url('https://media.tenor.com/qVaQBPj0bI4AAAAi/stars-sparkling.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    cursor: url('https://i.pinimg.com/originals/9b/cc/e9/9bcce95527358ea58124e9a03c905fbe.png'), auto;
 }
 
 .silkscreen-regular {
@@ -198,4 +199,3 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
-
