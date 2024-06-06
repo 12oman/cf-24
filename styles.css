@@ -9,7 +9,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    cursor: url('https://i.pinimg.com/originals/9b/cc/e9/9bcce95527358ea58124e9a03c905fbe.png'), auto;
+    
 }
 
 .silkscreen-regular {
